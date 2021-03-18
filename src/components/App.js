@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useHistory, withRouter } from "react-router-dom";
 import { Navbar} from 'react-bootstrap';
 import { Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,7 @@ const App = () => {
 
   const handleSuccessfulAuth = (data) => {
     handleLogin(data);
-    console.log(this.props);
+    // console.log(this.props);
     history.push("/dashboard"); //this has to be updated to latest
   }
 
@@ -68,7 +68,7 @@ const App = () => {
   }
   return (
     <div className="container-fluid app-container">
-          <Router>
+    <Router>
     <div className="container-fluid main-conatiner">
     <Navbar>
         <Navbar.Brand  className="brand1" >  
@@ -86,9 +86,10 @@ const App = () => {
         <Route path="/login"><Login handleSuccessfulAuth={handleSuccessfulAuth} /></Route> 
         <Route path="/signup">
         <Signup />
+        <Route  path="/dashboard" type="private" />Dashboard
         </Route>
         </Switch>
-              <p>Status: {loggedInStatus}</p>
+        <p>Status: {loggedInStatus}</p>
       <button onClick={() => handleLogoutClick()}>Logout</button>
       </div>
       </Router>
