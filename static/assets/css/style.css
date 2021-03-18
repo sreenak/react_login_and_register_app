@@ -1,0 +1,144 @@
+.app-container{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*LOGIN IN CSS*/
+  body{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.main-conatiner{
+  background:url('/assets/images/background.jpeg') no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  z-index: 100;
+  
+}
+
+
+.border-btn{
+  background-color: #31326f!important;
+  border-radius: 0px!important;
+  color: #fff!important;
+  padding: 7px;
+  border-color: #020259!important;
+  width: 100px;
+  /*text-indent: -999px;*/
+}
+
+.border-btn:hover{
+  cursor: pointer;
+  border-radius: 0px!important;
+ background-color: #020259!important;
+ color: #fff!important;
+  /*text-indent: -999px;*/
+}
+.border-btn-search{
+  /*text-indent: 999px;*/
+  border-radius: 0px!important;
+  border-color: #020259!important;
+  margin-left: 5px;
+  /*text-indent: -999px;*/
+}
+.brand2 {
+  /*text-indent: 999px;*/
+  float: right;
+  margin-right: 3%;
+  margin-bottom: 10px;
+  /*text-indent: -999px;*/
+}
+.brand_area{
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.content-area
+{
+  margin-top: 10%;
+}
+.content{
+margin-left: 5%;
+}
+.search{
+  margin-top: 13%;
+}
+.search-content{
+margin-left: 5%;
+}
+.input-data{
+  margin-right: 30px;
+  height: 25px;
+  width: 20%;
+}
+.input-data1{
+  height: 25px;
+  width: 20%;
+}
+.border-btn-search{
+  border-radius: 0px!important;
+  border-color: #020259!important;
+  background-color:  #9ddfd3!important;
+  color: #020259!important;
+  height: 35px;
+  width: 90px;
+}
+
+
+/*SIGNCSS ENDS*/
+  .signin-text{
+    color: #3a2f77;
+  }
+  .input-signin-data{
+   
+    height: 50px;
+    width: 30%;
+   margin: 1%;
+  }
+  .signin-box{
+   
+  }
+  .signin-content{
+    margin-left: 2%;
+    }
+.border-signin-btn-search{
+        border-radius: 20px!important;
+        border-color: #3a2f77!important;
+        background-color:  #3a2f77!important;
+        color: #fff!important;
+        height: 45px;
+        width: 30%;
+        margin-left: 1%;
+     }
+     
+/*SIGNUP CSS*/.signup-box{
+    background-color: #e1f6fb;
+    border-radius: 10px;
+    width: 88%!important;
+ }
+ .content-signup{
+    margin-left: 1%;
+    padding: 10px 0px;;
+    }
+.signin-text{
+     color: #000;
+     padding: 5px;
+}
+.content-area-signup
+{
+  margin-top: 8%;
+}
+
+.border-signup-btn-search{
+    border-radius: 20px!important;
+    border-color: #0f3f8c!important;
+    background-color:  #0f3f8c!important;
+    color: #fff!important;
+    height: 45px;
+    width: 90%;
+    margin-left: 1%;
+ }
