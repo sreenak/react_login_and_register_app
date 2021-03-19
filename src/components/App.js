@@ -43,11 +43,13 @@ const App = () => {
       .then((response) => {
         if (response.data.logged_in && loggedInStatus === "NOT_LOGGED_IN") {
           setLoggedInStatus("LOGGED_IN");
+          window.sessionStorage.setItem('userStatus', 'LOGGED_IN');
           setUser(response.data.user);
         } else if (
           !response.data.logged_in &
           (loggedInStatus === "LOGGED_IN")
         ) {
+          window.sessionStorage.setItem('userStatus', 'NOT_LOGGED_IN');
           setLoggedInStatus("NOT_LOGGED_IN");
           setUser({});
         }
@@ -63,6 +65,7 @@ const App = () => {
 
   const handleLogout = () => {
     setLoggedInStatus("NOT_LOGGED_IN");
+    window.sessionStorage.setItem('userStatus', 'NOT_LOGGED_IN');
     setUser({});
   };
 

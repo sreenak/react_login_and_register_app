@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import axios from "axios";
-export default class Dashboard extends Component {
-   render() {
-    return (
-      <div >
-    <h2> I'm in Dashboard</h2>
-        <h2>Dashboard</h2>
+import { useHistory } from "react-router";
 
-        <p>Status: {this.props.loggedInStatus}</p>
+const Dashboard = () => {
+  const history = useHistory();
+
+  React.useEffect(() => {
+    if (window.sessionStorage.getItem('userStatus') === 'LOGGED_IN') {
+      history.push('/login')
+    }
+  }, []);
+  
+  return (
+    <div >
+      <h2> I'm in Dashboard</h2>
+      <h2>Dashboard</h2>
+      <p>Status: {this.props.loggedInStatus}</p>
    </div>
   );
-  }
 }
