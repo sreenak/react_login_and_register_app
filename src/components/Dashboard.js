@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Component } from "react";
+import axios from "axios";
+export default class Dashboard extends Component {
+   render() {
+    return (
+      <div >
+    <h2> I'm in Dashboard</h2>
+        <h2>Dashboard</h2>
 
-export default function Dashboard() {
-  return(
-  	<div>
-    <h2>Dashboard</h2>
-   <h1>Status: {props.loggedInStatus}</h1>
+        <p>Status: {this.props.loggedInStatus}</p>
    </div>
   );
+  }
 }
